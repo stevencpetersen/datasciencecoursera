@@ -51,7 +51,7 @@ nrow(pml.tst); ncol(pml.tst)
 
 Two models were initially attempted, k-nearest neighbor and random forest, and both provided similarly accurate results. The results of random forest were used here as this model reports out-of-bag error. The final model is reported.
 
-Cross validation is used through the trainControl feature providing 10-fold cross-validation and the reported "out-of-bag" (OOB) error estimate is reported at less than 1%.
+Cross validation is used through the trainControl feature providing 10-fold cross-validation and the reported "out-of-bag" (OOB) error estimate is reported to be .56%.
 
 ```{r}
 tc<-trainControl(method="cv");
